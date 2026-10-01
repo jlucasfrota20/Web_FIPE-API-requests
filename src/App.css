@@ -42,42 +42,82 @@ header {
 
 main {
     background-color: var(--color-60);
+    min-height: 85vh;
 }
     p {
         font-family: var(--font-jetbrains);
         font-size: 0.8rem;
+        text-align: center;
+        color: white;
+        padding: 15px 5vw;
     }
+        abbr {
+            text-decoration: none;
+            color: var(--color10-orange)
+        }
 
     form {
         display: flex;
         flex-flow: column;
         align-items: center;
     }
+        div.formulario {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
 
         label {
             font-family: var(--font-bebas);
             color: var(--color10-orange);
             letter-spacing: 2px;
             font-size: 1.2rem;
+            margin-top: 15px;
+            margin-right: auto;
         }
 
         select {
-            font-size: 1rem;
+            font-size: 0.9rem;
+            padding: 3px;
+            width: 50vw;
+            border: none;
+            max-width: 500px;
+            min-width: 150px;
+            border-radius: 2px;
         }
+            select:focus {
+                border: var(--color10-orange) 2px solid;
+                transition: 0.3s;
+            }
 
         button {
             font-family: var(--font-jetbrains);
             font-size: 0.8rem;
             padding: 3px 10px 3px 10px;
-            border-radius: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 50vw;
+            max-width: 500px;
+            min-width: 150px;
+            margin-top: 20px;
+            transition: 0.3s;
         }
+            button:hover {
+                transition: 0.3s;
+                border-radius: 10px;
+                width: 48vw;
+                background-color: var(--color10-green);
+            }
 
 footer {
     background-color: var(--color-30);
     color: white;
-    padding: 15px;
     text-align: center;
 }
     footer p {
         font-family: monospace;
+        font-size: 0.8rem;
+        text-align: center;
+        color: white;
+        padding: 20px 0px;
     }

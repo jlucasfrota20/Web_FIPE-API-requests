@@ -7,27 +7,30 @@ function App() {
   return (
     <>
       <header>
-        <h1>FIPE <span>APIrequests</span></h1>
+        <h1><abbr title="Fundação Instituto de Pesquisas Econômicas">FIPE</abbr> <span>APIrequests</span></h1>
       </header>
       <main>
-        <p>Busque preços de veículos com o FIPE APIrequests. Selecione a marca, o modelo e o ano.</p>
+        <p>Busque preços de veículos com o <abbr title="Fundação Instituto de Pesquisas Econômicas">FIPE</abbr> APIrequests. Selecione a marca, o modelo e o ano. Com isso, encontre os preços médios desses veículos no Brasil.</p>
+
         <form action="">
-          <label htmlFor="marca">Marca</label>
-          <select name="marca" id="marca">
+          <div className="formulario">
+            <label htmlFor="marca">Marca</label>
+            <select name="marca" id="marca">
             
-          </select>
+            </select>
 
-          <label htmlFor="modelo">Modelo</label>
-          <select name="modelo" id="modelo">
+            <label htmlFor="modelo">Modelo</label>
+            <select name="modelo" id="modelo">
 
-          </select>
+            </select>
 
-          <label htmlFor="ano">Ano</label>
-          <select name="ano" id="ano">
+            <label htmlFor="ano">Ano</label>
+            <select name="ano" id="ano">
 
-          </select>
+            </select>
+          </div>
 
-          <button type="submit">PROCURAR PREÇO</button>
+          <button type="submit" id="submit">PROCURAR PREÇO</button>
         </form>
       </main>
       <footer>
