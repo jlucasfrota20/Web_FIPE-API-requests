@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --font-jetbrains: 'JetBrains Mono', monospace, sans-serif;
+    --font-bebas: 'Bebas Neue', monospace, sans-serif;
+    --font-blackops: 'Black Ops One', monospace, sans-serif;
+    --color-60: rgb(15, 23, 42);
+    --color-30: rgb(39, 54, 78);
+    --color10-orange: rgb(197, 130, 13);
+    --color10-green: rgb(16, 185, 129);
+    --border-radius: 20%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* [tema="dark"] {
+    --color-60: rgb(15, 23, 42);
+    --color-30: rgb(39, 54, 78);
+    --color-10: rgb(16, 185, 129);
+} */
+
+header {
+    background-color: var(--color-30);
+}
+    header h1 {
+        text-align: center;
+        font-family: var(--font-blackops);
+        color: var(--color10-orange);
+        padding-top: 20px;
+    }
+        header h1 span {
+            font-family: var(--font-jetbrains);
+            color: white;
+            font-size: 1.8rem;
+        }
+
+main {
+    background-color: var(--color-60);
+}
+
+footer {
+    background-color: var(--color-30);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
