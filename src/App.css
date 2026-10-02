@@ -51,7 +51,7 @@ main {
         color: white;
         padding: 15px 5vw;
     }
-        abbr {
+        abbr, span.main {
             text-decoration: none;
             color: var(--color10-orange)
         }
@@ -77,12 +77,14 @@ main {
         }
 
         select {
+            font-family: var(--font-jetbrains);
             font-size: 0.9rem;
+            font-weight: 300;
             padding: 3px;
             width: 50vw;
             border: none;
             max-width: 500px;
-            min-width: 150px;
+            min-width: 250px;
             border-radius: 2px;
         }
             select:focus {
@@ -96,17 +98,51 @@ main {
             padding: 3px 10px 3px 10px;
             border-radius: 5px;
             border: none;
+            font-weight: bold;
+            min-width: 250px;
             width: 50vw;
             max-width: 500px;
-            min-width: 150px;
             margin-top: 20px;
-            transition: 0.3s;
+            transition: border-radius background-color 0.3s;
         }
             button:hover {
                 transition: 0.3s;
                 border-radius: 10px;
-                width: 48vw;
                 background-color: var(--color10-green);
+            }
+
+            button:active {
+                transition: 0.5s;
+                font-weight: 200;
+                color: white;
+                background-color: black;
+            }
+    
+    div#flex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+        div#resultado {
+            background-color: var(--color10-green);
+            border-radius: 5px;
+            min-width: 250px;
+            width: 50vw;
+            max-width: 500px;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+            div#resultado:hover {
+                transition: 0.3s;
+                background-color: var(--color10-orange);
+                border-radius: 12px;
+            }
+
+            div#resultado p {
+                font-family: var(--font-bebas);
+                font-size: 1.5rem;
+                color: white;
+                text-align: center;
             }
 
 footer {
